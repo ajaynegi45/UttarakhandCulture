@@ -1,7 +1,35 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+
+    // output: "export"
+    // reactStrictMode: true,
+    // devIndicators: false,
+    images:{
+        // You can use any one
+        // domain:process.env.NEXT_PUBLIC_DOMAIN, // Here you can give specific image
+
+        // Here you can give allow all image with that url
+        remotePatterns: [{
+            protocol: "https",
+            hostname: "avatars.githubusercontent.com",
+        },{
+            protocol: 'https',
+            hostname: '**'
+        }
+        ]
+    }
+
+    // webpack: (config, { isServer }) => {
+    //     // Handle TypeScript files
+    //     config.module.rules.push({
+    //         test: /\.tsx?$/,
+    //         use: 'ts-loader',
+    //         exclude: /node_modules/,
+    //     });
+    //
+    //     return config;
+    // }
 };
 
 export default nextConfig;
