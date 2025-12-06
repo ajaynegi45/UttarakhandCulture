@@ -7,6 +7,14 @@ import {usePathname} from "next/navigation";
 import {cn} from "@/lib/utils";
 import Link from "next/link";
 
+import {
+    SignInButton,
+    SignUpButton,
+    SignedIn,
+    SignedOut,
+    UserButton,
+} from '@clerk/nextjs'
+
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -50,7 +58,7 @@ export default function Navbar() {
         <>
             <nav
                 className={cn(
-                    "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
+                    "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-2 py-4",
                     isScrolled || !isHome || isMobileMenuOpen
                         ? "bg-white/10 backdrop-blur-md border-b border-white/20 shadow-lg py-3 text-foreground"
                             : "bg-transparent text-white"
@@ -84,19 +92,37 @@ export default function Navbar() {
                                 )}/>
                             </Link>
                         ))}
-                        <Link href="/contact">
-                            <Button
-                                variant={isScrolled || !isHome ? "default" : "secondary"}
-                                className="rounded-full px-6"
-                            >
-                                Contact Us
-                            </Button>
-                        </Link>
+
+                        <header className={"flex items-center authentication"}>
+                            <SignedOut>
+                                {/*<SignInButton />*/}
+                                <SignInButton>
+                                    <Button
+                                        variant={isScrolled || !isHome ? "default" : "secondary"}
+                                        className="rounded-full px-5 h-9 cursor-pointer"
+                                    >
+                                        SignIn
+                                    </Button>
+                                </SignInButton>
+                            </SignedOut>
+
+                            <SignedIn>
+                                <UserButton />
+                            </SignedIn>
+                        </header>
+                        {/*<Link href="/contact">*/}
+                        {/*    <Button*/}
+                        {/*        variant={isScrolled || !isHome ? "default" : "secondary"}*/}
+                        {/*        className="rounded-full px-6"*/}
+                        {/*    >*/}
+                        {/*        Contact Us*/}
+                        {/*    </Button>*/}
+                        {/*</Link>*/}
                     </div>
 
                     {/* Mobile Menu Button */}
                     <button
-                        className="lg:hidden p-2 z-50 relative"
+                        className="lg:hidden pl-2 z-50 relative"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         aria-label="Toggle Menu"
                     >
@@ -128,14 +154,35 @@ export default function Navbar() {
                                 {link.name}
                             </Link>
                         ))}
-                        <div className="pt-8">
-                            <Link href="/contact">
-                                <Button size="lg" className="rounded-full px-8 text-lg"
-                                        onClick={() => setIsMobileMenuOpen(false)}>
-                                    Contact Us
-                                </Button>
-                            </Link>
-                        </div>
+
+
+                        <header className={"flex items-center justify-center text-center"}>
+                            <SignedOut>
+                                {/*<SignInButton />*/}
+                                <SignUpButton>
+                                    <Button
+                                        variant={isScrolled || !isHome ? "default" : "secondary"}
+                                        className="rounded-full px-6 cursor-pointer"
+                                    >
+                                        Sign Up
+                                    </Button>
+                                </SignUpButton>
+                            </SignedOut>
+
+                            <SignedIn>
+                                <UserButton>Profile</UserButton >
+                            </SignedIn>
+                        </header>
+
+
+                        {/*<div className="pt-8">*/}
+                        {/*    <Link href="/contact">*/}
+                        {/*        <Button size="lg" className="rounded-full px-8 text-lg"*/}
+                        {/*                onClick={() => setIsMobileMenuOpen(false)}>*/}
+                        {/*            Contact Us*/}
+                        {/*        </Button>*/}
+                        {/*    </Link>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             )}
