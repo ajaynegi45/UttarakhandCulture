@@ -78,9 +78,7 @@ export default function Footer() {
                          MozUserSelect: "none",
                          msUserSelect: "none",
                      }}
-                 >
-          Uttarakhand Culture
-        </span>
+                 >Uttarakhand Culture</span>
             </section>
         </footer>
     );
