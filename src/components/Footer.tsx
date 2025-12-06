@@ -5,13 +5,13 @@ export default function Footer() {
 
     return (
         <footer
-            className="bg-primary text-white pt-20 pb-10 px-6 relative overflow-hidden rounded-t-3xl border-t md:rounded-t-[4rem]">
+            className="bg-primary text-white pt-20 pb-0 px-0 relative overflow-hidden rounded-t-3xl border-t md:rounded-t-[4rem]">
             {/* Abstract decorative circle */}
             <div
-                className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl"/>
+                className="absolute top-0 right-0 w-96 h-96  bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl"/>
 
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10 mb-16">
-                <div className="col-span-1 md:col-span-2">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10 mb-16 px-4">
+                <div className="col-span-1 md:col-span-2 ">
                     <div className="flex items-center gap-2 font-serif text-2xl font-bold mb-6">
                         <Mountain className="h-8 w-8 text-secondary"/>
                         <span>Devbhoomi Echoes</span>
@@ -57,20 +57,26 @@ export default function Footer() {
 
             <div
                 className="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
-                <p>&copy; 2023 - {currentYear} Devbhoomi Echoes. All rights reserved.</p>
-                <div className="flex items-center gap-2">
+                <p className={"px-4"}>&copy; 2023 - {currentYear} Uttarakhand Culture</p>
+                <div className="flex items-center gap-2 px-4">
                     <span>Made with</span>
                     <Heart className="w-4 h-4 text-secondary fill-secondary"/>
                     <span>in the mountains</span>
                 </div>
             </div>
 
-
-            <section
-                className="relative px-4 max-w-[1080px] text-center text-gray-100 flex items-center justify-center gap-2 mx-auto pb-2 text-[9rem] sm:text-[14rem] md:text-[19rem] lg:text-[20rem] leading-[1] pointer-events-none font-bold -mb-[11%] sm:-mb-[7%] duration-200 ease-in-out">
-                <div className="text-white animate-[pulse_4s_infinite] drop-shadow-xl">Orshot</div>
-                <div
-                    className="bg-gradient-to-b from-transparent via-white to-white h-[20%] w-full absolute bottom-0 left-0 z-20"></div>
+            <section className={"relative text-center text-gray-100 flex flex-col items-center justify-center pt-10  text-[1.8rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] leading-[1] pointer-events-none font-bold -mb-1 sm:-mb-5 opacity-40"}>
+                 <span
+                     className="inline-block"
+                     style={{
+                         color: "hsl(165,40%,27%)",
+                         textShadow:
+                             "6px 6px 12px rgba(0,0,0,0.55), -6px -6px 12px rgba(255,255,255,0.09)",
+                         WebkitTextStroke: "1px rgba(255,255,255,0.04)",
+                     }}
+                 >
+          Uttarakhand Culture
+        </span>
             </section>
         </footer>
     );
