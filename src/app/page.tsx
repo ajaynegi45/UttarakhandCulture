@@ -155,17 +155,25 @@ export default function Home() {
             </Section>
 
 
-            {/* Festival Section */}
+
+            {/*Festivals • Fairs • Cultural Events*/}
             <Section pattern className="bg-muted/30">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-12">
-                        <span className="text-secondary font-medium tracking-wider uppercase text-sm mb-2 block">Events & Fairs</span>
-                        <h2 className="text-4xl font-serif font-bold text-primary">Experience the Vibrance</h2>
+                        <span className="text-secondary font-medium tracking-wider uppercase text-sm mb-2 block">
+                            Events Calendar
+                        </span>
+                        <h2 className="text-4xl font-serif font-bold text-primary">
+                            Upcoming Festivals & Fairs
+                        </h2>
+                        <p className="mt-3 max-w-2xl mx-auto text-muted-foreground text-base">
+                            Discover upcoming celebrations that bring communities, rituals, and seasons together.
+                        </p>
                     </div>
-
                     <ThreeDEventCarousel events={festivalEvents}/>
                 </div>
             </Section>
+
 
 
             {/* Languages Section */}
