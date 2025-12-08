@@ -1,4 +1,4 @@
-import {Accordion, AccordionContent, AccordionItem, AccordionTrigger,} from "@/components/ui/accordion";
+import {Accordion, AccordionContent, AccordionItem, AccordionTrigger,} from "./ui/accordion";
 import {motion} from "framer-motion";
 
 export default function FAQ() {
