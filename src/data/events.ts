@@ -1,5 +1,5 @@
 import {StaticImageData} from "next/image";
-import kumbh from "@/assets/haridwar_sacred_ghats.png"
+import kumbh from "@/assets/haridwar_district_uttarakhand_culture.webp"
 
 export interface EventData {
     title: string;

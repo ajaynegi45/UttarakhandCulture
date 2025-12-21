@@ -1,11 +1,11 @@
 import {StaticImageData} from "next/image";
-import harela from "@/assets/harela.png";
-import Ghughutiya from "@/assets/ghughutiya.png";
-import GheeSankranti from "@/assets/gheeSankranti.png"
-import EgaasBagwal from "@/assets/egaasBagwal.png";
+import harela from "@/assets/harela_festival_uttarakhand_culture.webp";
+import Ghughutiya from "@/assets/ghughutiya_festival_uttarakhand_culture.webp";
+import GheeSankranti from "@/assets/ghee_sankranti_festival_uttarakhand_culture.webp"
+import EgaasBagwal from "@/assets/egaas_bagwal_uttarakhand_culture.webp";
 
-import phoolDei from "@/assets/phoolDei.png";
-import khatarua from "@/assets/khatarua.png";
+import phoolDei from "@/assets/phool_dei_festival_uttarakhand_culture.webp";
+import khatarua from "@/assets/khatarua_festival_uttarakhand_culture.webp";
 
 
 export interface FestivalData {

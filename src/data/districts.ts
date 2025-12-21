@@ -1,17 +1,16 @@
-// import almoraImg from "@/assets/almora_district_landscape.png";
-import almoraImg from "@/assets/almora_mountain_valley_landscape.png";
-import bageshwarImg from "@/assets/bageshwar_sacred_valley.png";
-import chamoliImg from "@/assets/chamoli_valley_of_flowers.png";
-import champawatImg from "@/assets/champawat_historic_town.png";
-import dehradunImg from "@/assets/dehradun_valley_view.png";
-import haridwarImg from "@/assets/haridwar_sacred_ghats.png";
-import nainitalImg from "@/assets/nainital_beautiful_lake.png";
-import pauriImg from "@/assets/pauri_garhwal_green_hills.png";
-import pithoragarhImg from "@/assets/pithoragarh_frontier_valley.png";
+import almoraImg from "@/assets/almora_district_uttarakhand_culture.webp";
+import bageshwarImg from "@/assets/bageshwar_district__uttarakhand_culture.webp";
+import chamoliImg from "@/assets/chamoli_district_Uttarakhand_Culture.webp";
+import champawatImg from "@/assets/champawat_district_uttarakhand_culture.webp";
+import dehradunImg from "@/assets/dehradun_district_uttarakhand_culture.webp";
+import haridwarImg from "@/assets/haridwar_district_uttarakhand_culture.webp";
+import nainitalImg from "@/assets/nainital_district_uttarakhand_culture.webp";
+import pauriImg from "@/assets/pauri_garhwal_district_uttarakhand_culture.webp";
+import pithoragarhImg from "@/assets/pithoragarh_district_uttarakhand_culture.webp";
 import rudraprayagImg from "@/assets/rudraprayag_river_confluence.png";
-import tehriImg from "@/assets/tehri_garhwal_mountain_valley.png";
-import usnagarImg from "@/assets/udham_singh_nagar_plains.png";
-import uttarkashiImg from "@/assets/uttarkashi_sacred_peaks.png";
+import tehriImg from "@/assets/tehri_garhwal_district_uttarakhand_culture.webp";
+import usnagarImg from "@/assets/udham_singh_nagar_district_uttarakhand_culture.webp";
+import uttarkashiImg from "@/assets/uttarkashi_district_uttarakhand_culture.webp";
 
 export interface District {
     id: string;

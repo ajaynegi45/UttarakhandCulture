@@ -1,12 +1,13 @@
 "use client";
 
 import {getUpcomingEvents} from "@/data/getUpcomingEvents";
-import danceImg from "@/assets/choliya_folk_dancers.png";
-import nandaImg from "@/assets/nanda_devi_peak_majestic_view.png";
-import foodImg from "@/assets/traditional_pahadi_cuisine_thali.png";
-import aipanTexture from "@/assets/traditional_aipan_art_texture.png";
-import templeImg from "@/assets/kedarnath_temple_spiritual_scene.png";
-import backgroundImg from "@/assets/majestic_himalayan_sunrise_hero_background.png";
+import danceImg from "@/assets/choliya_folk_dance_uttarakhand_culture.webp";
+import nandaImg from "@/assets/nanda_devi_peak_uttarakhand_culture.webp";
+import foodImg from "@/assets/food_uttarakhand_culture.webp";
+import aipanTexture from "@/assets/aipan_art_uttarakhand_culture.webp";
+import templeImg from "@/assets/kedarnath_temple_uttarakhand_culture.webp";
+import backgroundImg from "@/assets/almora_district_uttarakhand_culture.webp";
+// import backgroundImg from "@/assets/badrinath_temple_uttarakhand_culture.webp";
 
 import Section from "@/components/Section";
 import {Button} from "@/components/ui/button";
@@ -35,7 +36,7 @@ export default function Home() {
                 {/* Background Image with Parallax feel */}
                 <motion.div
                     className="absolute inset-0 z-0"
-                    initial={{scale: 1.9}}
+                    initial={{scale: 1.5}}
                     animate={{scale: 1}}
                     transition={{duration: 10, ease: "easeOut"}}
                 >
@@ -260,7 +261,7 @@ export default function Home() {
 
 
             {/* Culture Showcase (Masonry Grid) */}
-            <Section id="culture" title="Living Traditions" subtitle="Culture & Lifestyle">
+            <Section id="culture" title="Living Traditions" subtitle="Culture & Lifestyle" className={"mb-20"}>
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:auto-rows-[300px]">
 
                     {/* Large Item - Temple */}
@@ -274,7 +275,7 @@ export default function Home() {
                             <Image src={templeImg} alt="Spiritual Heritage"
                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
                             <div
-                                className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
+                                className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent p-8 flex flex-col justify-end">
                                 <span
                                     className="text-secondary font-medium tracking-wider uppercase text-xs mb-2">Spiritual</span>
                                 <h3 className="text-3xl font-serif font-bold text-white mb-2">Abodes of the Divine</h3>
@@ -295,13 +296,12 @@ export default function Home() {
                         <Link href="/explore" className="block w-full h-full">
                             <Image src={aipanTexture} alt="Aipan Art"
                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
-                            <div
-                                className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6 text-center backdrop-blur-sm">
+                            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6 text-center backdrop-blur-sm">
                                 <div>
                                     <h3 className="text-2xl font-serif font-bold text-white mb-2">Aipan Art</h3>
-                                    <Button variant="outline"
-                                            className="text-white border-white hover:bg-white hover:text-black">Learn
-                                        Technique</Button>
+                                {/*    <Button variant="outline"*/}
+                                {/*            className="text-white border-white hover:bg-white hover:text-black">Learn*/}
+                                {/*        Technique</Button>*/}
                                 </div>
                             </div>
                         </Link>
@@ -319,7 +319,7 @@ export default function Home() {
                             <Image src={foodImg.src} alt="Pahadi Cuisine" fill
                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
                             <div
-                                className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-6 flex flex-col justify-end">
+                                className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent p-6 flex flex-col justify-end">
                                 <h3 className="text-xl font-serif font-bold text-white">Pahadi Zayka</h3>
                                 <p className="text-white/70 text-sm">Simple, nutritious, and divine.</p>
                             </div>
@@ -332,25 +332,25 @@ export default function Home() {
                         whileInView={{opacity: 1, y: 0}}
                         transition={{delay: 0.3}}
                         viewport={{once: true}}
-                        className="md:col-span-12 row-span-1 relative group overflow-hidden rounded-2xl shadow-md cursor-pointer"
+                        className="md:col-span-12 row-span-1 relative group overflow-hidden rounded-2xl shadow-md cursor-pointer md:h-100"
                     >
                         <Link href="/explore" className="block w-full h-full">
                             <Image src={danceImg} alt="Folk Dance"
                                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"/>
                             <div
-                                className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent p-8 flex flex-col justify-center">
+                                className="absolute inset-0 bg-linear-to-r from-black/70 via-black/30 to-transparent p-8 flex flex-col justify-end">
                                 <div className="max-w-xl">
                                     <span
                                         className="text-accent font-medium tracking-wider uppercase text-xs mb-2">Celebration</span>
-                                    <h3 className="text-3xl font-serif font-bold text-white mb-4">Rhythms of the
+                                    <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-2 sm:mb-4">Rhythms of the
                                         Mountains</h3>
-                                    <p className="text-white/80 mb-6">
+                                    <p className="text-white/80 mb-2 sm:mb-6 line-clamp-3">
                                         When the Dhol-Damau plays, the feet don&#39;t stop. Explore the vibrant folk
                                         dances like Choliya, Jhora, and Chancheri.
                                     </p>
-                                    <Button className="bg-secondary hover:bg-secondary/90 text-white rounded-full">
-                                        <Music className="w-4 h-4 mr-2"/> Listen to Folk Music
-                                    </Button>
+                                    {/*<Button className="bg-secondary hover:bg-secondary/90 text-white rounded-full">*/}
+                                    {/*    <Music className="w-4 h-4 mr-2"/> Listen to Folk Music*/}
+                                    {/*</Button>*/}
                                 </div>
                             </div>
                         </Link>

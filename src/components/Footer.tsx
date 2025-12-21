@@ -22,10 +22,10 @@ export default function Footer() {
                         A digital archive for the future generations to connect with their roots.
                     </p>
                     <div className="flex gap-4">
-                        {[Instagram, Twitter, Linkedin].map((Icon, i) => (
+                        {[Linkedin].map((Icon, i) => (
                             <a
                                 key={i}
-                                href="#"
+                                href="https://www.linkedin.com/company/uttarakhandculture"
                                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors"
                             >
                                 <Icon className="w-5 h-5"/>

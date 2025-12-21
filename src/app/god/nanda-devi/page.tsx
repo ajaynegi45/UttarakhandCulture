@@ -7,7 +7,7 @@ import {ArrowLeft, Mountain} from "lucide-react";
 import Link from "next/link";
 
 // Assets
-import nandaImg from "@/assets/nanda_devi_peak_majestic_view.png";
+import nandaImg from "@/assets/nanda_devi_peak_uttarakhand_culture.webp";
 
 export default function NandaDevi() {
     return (
@@ -17,7 +17,7 @@ export default function NandaDevi() {
             <div className="relative h-[80vh] w-full overflow-hidden">
                 <motion.div
                     className="absolute inset-0"
-                    initial={{scale: 1.1}}
+                    initial={{scale: 1.3}}
                     animate={{scale: 1}}
                     transition={{duration: 10}}
                 >
@@ -25,7 +25,7 @@ export default function NandaDevi() {
                         className="absolute inset-0 bg-cover bg-center"
                         style={{backgroundImage: `url(${nandaImg.src})`}}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80"/>
+                    <div className="absolute inset-0 bg-linear-to-b from-black/40 via-transparent to-black/80"/>
                 </motion.div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-8 md:p-20 text-white">

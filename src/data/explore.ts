@@ -1,15 +1,15 @@
 import {useCallback, useEffect, useMemo, useRef, useState} from "react";
 import {usePathname, useRouter, useSearchParams} from "next/navigation";
 import {Binoculars, History, Landmark, Languages, Mountain, PartyPopper, Utensils} from "lucide-react";
-import festivalImg from "@/assets/phoolDei.png";
-import ruler from "@/assets/panwar_garhwal_temples.png";
-import map from "@/assets/uttarakhand_district_explorer_map_background.png";
-import mela from "@/assets/gauchar_mela_fair.png";
-import GarhwaliLanguage from "@/assets/Garhwali-Language.png";
-import recipes from "@/assets/bhatt_ki_churkani_dish.png";
+import festivalImg from "@/assets/phool_dei_festival_uttarakhand_culture.webp";
+import ruler from "@/assets/panwar_garhwal_uttarakhand_culture.webp";
+import map from "@/assets/UTTARAKHAND-HIMALAYAS.webp";
+import mela from "@/assets/mela_uttarakhand_culture.webp";
+import GarhwaliLanguage from "@/assets/garhwali_language_uttarakhand_culture.webp";
+import recipes from "@/assets/bhatt_ki_churkani_recipe_uttarakhand_culture.webp";
 import kedarnath from "@/assets/katyuri_medieval_temples.png";
-import kumaoniLanguage from "@/assets/Language.webp"
-import JaunsariLanguage from "@/assets/Jaunsari-Language.png"
+import kumaoniLanguage from "@/assets/kumaoni_language_uttarakhand_culture.webp"
+import JaunsariLanguage from "@/assets/jaunsari_language_uttarakhand_culture.webp"
 
 
 /* --- Category --- */

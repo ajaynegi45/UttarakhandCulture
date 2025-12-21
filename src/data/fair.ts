@@ -1,7 +1,7 @@
 import {StaticImageData} from "next/image";
-import harela from "@/assets/harela_festival_celebration.png";
+import harela from "@/assets/harela_festival_uttarakhand_culture.webp";
 
-import mela from "@/assets/gauchar_mela_fair.png"
+import mela from "@/assets/mela_uttarakhand_culture.webp"
 
 
 export interface FairData {

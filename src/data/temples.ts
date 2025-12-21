@@ -1,4 +1,5 @@
 import kedarnathTemple from "@/assets/kedarnath_sacred_temple.png"
+import badrinath from "@/assets/badrinath_temple_uttarakhand_culture.webp"
 
 
 export interface Temple {
@@ -98,7 +99,7 @@ export const temples: Temple[] = [
             "Alaknanda River"
         ],
         best_visit_time: "May to October",
-        image: kedarnathTemple.src,
+        image: badrinath.src,
         story: "In the ethereal Valley of Gods, where clouds caress mountain peaks and the Alaknanda River sings ancient hymns, stands Badrinath Temple. Pilgrims arrive with hearts full of devotion, seeking the blessings of Lord Narayan. The natural hot springs near the temple are believed to possess healing powers, and thousands have experienced spiritual transformation in their waters. As sunset paints the peaks in golden hues, the temple's brass spire glimmers like a beacon of hope, reminding all who see it that the divine is not distant but intimately present in the Himalayan wilderness."
     },
     {
