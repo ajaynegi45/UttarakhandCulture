@@ -4,7 +4,7 @@ import {ArrowLeft, ChefHat, Clock, Users} from "lucide-react";
 import Image from 'next/image';
 import Link from "next/link";
 import {motion} from "framer-motion";
-import mithaiImg from "../../assets/bal_mithai_sweet.png";
+import mithaiImg from "../../assets/bal_mithai_recipes_uttarakhand_culture.webp";
 
 export default function BalMithai() {
     return (

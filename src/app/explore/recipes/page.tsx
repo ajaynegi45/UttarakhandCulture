@@ -10,9 +10,9 @@ import Image from 'next/image';
 import Link from "next/link";
 
 // Assets
-import bhattImg from "@/assets/bhatt_ki_churkani_dish.png";
-import alooImg from "@/assets/aloo_ke_gutke_dish.png";
-import mithaiImg from "@/assets/bal_mithai_sweet.png";
+import bhattImg from "@/assets/bhatt_ki_churkani_recipe_uttarakhand_culture.webp";
+import alooImg from "@/assets/aloo_ke_gutke_recipes_uttarakhand_culture.webp";
+import mithaiImg from "@/assets/bal_mithai_recipes_uttarakhand_culture.webp";
 
 const recipes = [
     {

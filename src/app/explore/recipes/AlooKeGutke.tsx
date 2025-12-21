@@ -4,7 +4,7 @@ import {ArrowLeft, ChefHat, Clock, Users} from "lucide-react";
 import Image from 'next/image';
 import Link from "next/link";
 import {motion} from "framer-motion";
-import alooImg from "../../assets/aloo_ke_gutke_dish.png";
+import alooImg from "../../assets/aloo_ke_gutke_recipes_uttarakhand_culture.webp";
 
 export default function AlooKeGutke() {
     return (

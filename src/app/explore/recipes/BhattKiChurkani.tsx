@@ -4,7 +4,7 @@ import {ArrowLeft, ChefHat, Clock, Users} from "lucide-react";
 import Image from 'next/image';
 import Link from "next/link";
 import {motion} from "framer-motion";
-import bhattImg from "../../assets/bhatt_ki_churkani_dish.png";
+import bhattImg from "../../assets/bhatt_ki_churkani_recipe_uttarakhand_culture.webp";
 
 export default function BhattKiChurkani() {
     return (
