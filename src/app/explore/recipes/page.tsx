@@ -23,7 +23,7 @@ const recipes = [
         serves: "4",
         image: bhattImg.src,
         desc: "A protein-rich black soybean curry cooked in an iron skillet, giving it a distinct dark color and earthy flavor. A staple of Kumaoni cuisine.",
-        link: "/recipes/bhatt-ki-churkani"
+        link: "/explore/recipes/bhatt-ki-churkani"
     },
     {
         id: "aloo-ke-gutke",
@@ -33,7 +33,7 @@ const recipes = [
         serves: "2",
         image: alooImg.src,
         desc: "Spicy, stir-fried potatoes tempered with Jakhiya (wild mustard) seeds. Best enjoyed with a cup of chai or as a side dish with Raita.",
-        link: "/recipes/aloo-ke-gutke"
+        link: "/explore/recipes/aloo-ke-gutke"
     },
     {
         id: "bal-mithai",
@@ -43,7 +43,7 @@ const recipes = [
         serves: "10",
         image: mithaiImg.src,
         desc: "The famous brown fudge of Almora made from roasted khoya and coated with white sugar balls. A sweet symbol of Uttarakhand.",
-        link: "/recipes/bal-mithai"
+        link: "/explore/recipes/bal-mithai"
     }
 ];
 
@@ -106,8 +106,7 @@ export default function RecipesList() {
                                             {recipe.desc}
                                         </p>
 
-                                        <Button variant="outline"
-                                                className="w-full group-hover:bg-secondary group-hover:text-white group-hover:border-secondary transition-colors">
+                                        <Button variant={"default"} className="w-full text-black/80 border border-input bg-background group-hover:bg-secondary hover:bg-secondary group-hover:text-white group-hover:border-secondary hover:border-secondary hover:cursor-pointer">
                                             View Recipe <ArrowRight className="w-4 h-4 ml-2"/>
                                         </Button>
                                     </CardContent>

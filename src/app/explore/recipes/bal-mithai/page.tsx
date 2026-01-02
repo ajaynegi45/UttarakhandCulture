@@ -1,12 +1,14 @@
+"use client"
+
 import Section from "@/components/Section";
 import {Button} from "@/components/ui/button";
 import {ArrowLeft, ChefHat, Clock, Users} from "lucide-react";
 import Image from 'next/image';
 import Link from "next/link";
 import {motion} from "framer-motion";
-import mithaiImg from "../../assets/bal_mithai_recipes_uttarakhand_culture.webp";
+import mithaiImg from "@/assets/bal_mithai_recipes_uttarakhand_culture.webp";
 
-export default function BalMithai() {
+export default function Page() {
     return (
         <div className="min-h-screen bg-background">
 
@@ -17,7 +19,8 @@ export default function BalMithai() {
                     <motion.div initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}}>
                         <span
                             className="bg-secondary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">Dessert</span>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold mb-4">Bal Mithai</h1>
+                        <h1 className="text-4xl sm:text-6xl md:text-8xl font-hand font-bold mb-4 bg-clip-text text-transparent bg-linear-to-r from-white to-white/50 ">Bal Mithai</h1>
+
                         <div className="flex items-center gap-6 text-lg">
                             <div className="flex items-center gap-2"><Clock className="w-5 h-5"/> 1 Hr 30 Mins</div>
                             <div className="flex items-center gap-2"><Users className="w-5 h-5"/> Serves 10+</div>
@@ -81,14 +84,14 @@ export default function BalMithai() {
                     <div className="md:col-span-1">
                         <div className="bg-muted/30 p-6 rounded-2xl sticky top-24">
                             <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                                <ChefHat className="w-5 h-5 text-secondary"/> Chef's Tip
+                                <ChefHat className="w-5 h-5 text-secondary"/> Chef&#39;s Tip
                             </h3>
                             <p className="text-sm text-muted-foreground italic mb-6">
-                                "The key to perfect Bal Mithai is the roasting of the Khoya. Don't rush it! If it burns,
-                                it will taste bitter. If undercooked, it won't have the signature chewiness."
+                                &#34;The key to perfect Bal Mithai is the roasting of the Khoya. Don&#39;t rush it! If it burns,
+                                it will taste bitter. If undercooked, it won&#39;t have the signature chewiness.&#34;
                             </p>
-                            <Link href="/recipes">
-                                <Button variant="outline" className="w-full">
+                            <Link href="/explore/recipes">
+                                <Button variant="default" className="w-full text-black/80 border border-input bg-background hover:bg-secondary hover:text-white hover:border-secondary hover:cursor-pointer ">
                                     <ArrowLeft className="w-4 h-4 mr-2"/> Back to Recipes
                                 </Button>
                             </Link>
