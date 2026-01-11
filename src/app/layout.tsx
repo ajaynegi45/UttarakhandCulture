@@ -7,6 +7,7 @@ import {ClerkProvider,} from '@clerk/nextjs';
 import {Suspense} from 'react';
 import Image from "next/image";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const dmSans = DM_Sans({
     subsets: ["latin"],
@@ -53,6 +54,7 @@ export default function RootLayout({
                 </div>}>
                 {children}
                 <Analytics />
+                <SpeedInsights />
             </Suspense>
             <Footer/>
             </body>
