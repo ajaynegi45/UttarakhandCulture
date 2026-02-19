@@ -13,6 +13,64 @@ This webapp is built to help you explore Uttarakhand in depth:
 *   **History & Heritage**: Trace the lineage of rulers and the evolution of local languages.
 *   **Visual Storytelling**: Experience the state through 3D carousels and curated visual narratives.
 
+## System Architecture
+
+UttarakhandCulture is engineered to be a high-performance "Immersive Experience" engine. Here is how the tech stack orchestrates the data flow:
+
+```mermaid
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
+graph TD
+    subgraph "Data Layer"
+        A[Cultural Assets/JSON] --> B[SVG Map Data]
+    end
+
+    subgraph "Engine (Next.js 15)"
+        B --> C{App Router}
+        C --> D[Server Components]
+        C --> E[Client Components]
+    end
+
+    subgraph "Experience Layer"
+        D --> F[Static Content/SEO]
+        E --> G[Framer Motion Animations]
+        E --> H[Radix UI Interactivity]
+        G & H & F --> I[User View: Devbhoomi Experience]
+    end
+
+    style I fill:#f9f,stroke:#333,stroke-width:4px
+```
+
+## Interactive Map Flow
+
+When a user interacts with the digital map of Uttarakhand, the following lifecycle occurs:
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant M as SVG Map Component
+    participant R as Next.js Router
+    participant D as District Detail Page
+
+    U->>M: Clicks on a District (e.g., Pauri)
+    M->>M: Trigger Framer Motion (Scale/Highlight)
+    M->>R: Push Route (/districts/pauri)
+    R->>D: Fetch Cultural Data (Temples/History)
+    D-->>U: Render Immersive Narrative
+```
+
+## Visual Performance Comparison
+
+| Feature        | Standard Implementation | UttarakhandCulture Approach              |
+|---------------|------------------------|------------------------------------------|
+| Maps          | Static Images          | Interactive SVGs                         |
+| Routing       | Page Reloads           | Next.js App Router (Soft Navigation)     |
+| Motion        | Standard CSS           | Framer Motion Orchestration              |
+| Accessibility | Basic HTML             | Radix UI Primitives                      |
+
 ## Tech Stack
 
 We use modern, robust tools to ensure a smooth and performant experience:
